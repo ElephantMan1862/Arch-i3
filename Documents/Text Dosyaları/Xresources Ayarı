@@ -1,0 +1,1 @@
+xrdb ~/.Xresources     komutu girilerek ayar dosyası olarak ".Xdefaults" yerine ".Xresources" gösterilir.

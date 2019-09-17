@@ -1,0 +1,3 @@
+1. Öncelikle root olarak giriş yaptıktan sonra "mkdir /mnt/usb" komutu ile /mnt içerisine usb adında bir klasör oluşturalım.
+2. Ardından "mount /dev/sdc1 /mnt/usb" komutu ile USB'yi bilgisayara mount edelim. (burada sdc1 kısmı değişebilir, o yüzden lsblk komutu ile USB'nin ya da bağlanmak istenen diskin adını öğrenelim, ondan sonra bu komutu deneyelim)
+3.Artık USB belleğimizin içerisine girebiliyoruz fakat işimiz bitince bilgisayara bağladığımız diski tekrar ayırmak için "umount /dev/sdc1 /mnt/usb/" komutunu girmeyi unutmayalım.

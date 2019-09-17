@@ -1,0 +1,11 @@
+1-"sudo pacman -S openvpn" komutu ile OpenVPN kurulur.
+
+2-Ardından www.vpnbook.com adresine girip OpenVPN sekmesinden server seçilip indirilir.
+
+3-İndirilen ".zip" dosyası çıkartılır ve içerisinden bir tanesi seçilir (443 portlu olanı seçmek he zaman daha iyidir, çünkü 443 numaralı port https ile bağlantılı olduğundan engellenmez)
+
+4-Dosya indirilen dizinden terminali açıp "sudo openvpn --config vpnbook-euro2-tcp443.ovpn" komutu ile de OpenVPN ile servere giriş yapıyoruz.
+
+5-Bu komutun ardından bize kullanıcı adı ve şifre soracak, buraya da www.vpnbook.com adresindeki OpenVPN sekmesinden indirdiğimiz, dosyanın altında yazan kullanıcı adı ve şifreyi giriyoruz.
+
+6-Bu işlemlerin ardından VPN'imiz artık kullanıma hazır.

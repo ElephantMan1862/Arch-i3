@@ -1,0 +1,5 @@
+ranger ve w3m'in ortak çalışıp resim gösterebilmesi için bu yazılımların
+yüklendikten ve config dosyaları ayarlandıktan sonra şu komutun terminale
+girilmesi gerekir;
+
+ranger --copy-config=scope

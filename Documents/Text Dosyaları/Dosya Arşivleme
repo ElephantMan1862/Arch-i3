@@ -1,0 +1,5 @@
+###SIKIŞTIRMA####
+tar -zcvf Dosyaadi.tar.gz ~/Documents/Arch-Ayarlarım
+
+####ÇIKARTMA####
+tar -zxvf dosyaadi.tar.gz

@@ -1,0 +1,55 @@
+####PACMAN ARAMA RENKLENDİRME####
+Pacman aramalarını renkli hale getirmek için "etc/pacman.conf" dizinine gidiyoruz ve
+
+#Color
+
+satırını bulup başındaki diez işaretini kaldırıp kaydedip çıkıyoruz ve artık pacman aramalarımız renkli hale geliyor.
+
+####MULTİLİB DEPOLARINI AKTİF ETMEK####
+Aynı şekilde "etc/pacman.conf" dizininden; 
+
+#[multilib]
+#Include = /etc/pacman.d/mirrorlist
+
+satırlarını bulup başlarındaki diez işaretlerini kaldırıyoruz ve ardından "pacman -Syyu" komutu ile depomuzu güncelledikten sonra multilib depomuz aktif.
+
+####GÜNCELLEME VE EŞLEŞTİRME;####
+"pacman-optimize && sync" - İndirme hızını optimize etme ve eşleştirme
+"pacman -Su" - Sistem güncelleme
+"pacman -Syu" - Depo veritabanını eşleştirip sistemi güncelleme
+"yaourt -Syu" - AUR'u (Arch User Repository) günceller
+
+####KURULUM;####
+"pacman -U /package_path/package_name.pkg.tar.xz" - Yerel bir paketi kurmak
+"pacman -U http://www.examplepackage/repo/examplepkg.tar.xz" - Bir yansı üzerindeki paketi yüklemek
+"pacman -S $(pacman -Qq | grep -v "$(pacman -Qmq)")" - Bütün paketleri yeniden yüklemek
+
+####KALDIRMAK;####
+"pacman -R package_name" - Bir paketi kaldırmak
+"pacman -Rs package_name" - Başka paketlerce kullanılmayan bağımlılıklarıyla birlikte bir paketi kaldırmak
+"pacman -Rsc package_name" - Bir paketi tüm bağımlılıklarıyla beraber kaldırmak
+"pacman -Rn package_name" - Pacman , kurulu paketlerin ayar dosyalarını .pacsave şeklinde saklar. Bir paketi ütün ayar dosyalarıyla beraber kaldırmak için
+"rm -fr ~/.local/share/Trash/files/*" - Geri dönüşüm kutusunu temizlemek
+"rm -fr ~/.local/share/Trash/info/*" - Geri dönüşüm kutusunu temizlemek
+
+####TEMİZLEME;####
+"pacman -Sc $(pacman -Qdtq)" -Gereksiz tüm paketleri bellekten boşaltmak
+"pacman -Scc" - Paketlerin tutulduğu belleği tümüyle boşaltmak
+"pacman -Sc" - Belleği temizleme
+"pacman -Rs $(pacman -Qtdq)" - İhtiyaç duyulmayan paketleri temizleme
+
+####ARAMA;####
+"pacman -Qs package_name" - Kurulu paketler içinde aramak
+"pacman -Si package_name" - Paket hakkında bilgi almak
+"pacman -Qi package_name" - Paket hakkında bilgi almak
+"pacman -Ql" - Kurulu paketlerin listesini almak
+"pacman -Qdt" - Gerekli olmayan paketleri bağımlılıkları olmaksızın listelemek
+"pactree package_name" - Paketin bağımlılıklarını listelemek
+"sudo pacman -Q > laptop.pacman" - Sistemde kurulu tüm paketleri sürüm numaraları ile listelemek
+"pacman -Qm" - AUR'dan kurulan tüm paketlerin listesi
+
+####PGP (KAMU ANAHTARI) EKLEME####
+"gpg --keyserver keys.gnupg.net --recv-keys ................" - noktalı kısımlara hata alınan key yazılır
+"gpg --recv-keys ................" - üstteki kod kabul edilmezse bu şekilde yapılır.
+
+

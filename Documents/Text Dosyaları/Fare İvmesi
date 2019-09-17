@@ -1,0 +1,8 @@
+1-Root yetkisi alınarak "/etc/X11/xorg.conf.d/50-mouse-acceleration.conf" dosyası herhangi bir text editör ile açılır,
+
+2-Altıncı satırdaki Option "AccelSpeed" "0" kısmını aşağıdaki değerler verilerek ya da aşağıdaki yöntemler uygulanarak fare ivmesi ayarlanır;
+
+*AccelSpeed değeri "-1" olursa fare hareket etmez.
+*Her satır başına "#" yani diez işareti koyarsak fare ivmesi en yavaş halini alır.
+*Eğer AccelSpeed değeri "0" olursa fare bir sonraki hızlı değere ulaşır
+*Ve son olarak eğer AccelSpeed değeri "1" olursa fare en hızlı ivme hızına ulaşır.

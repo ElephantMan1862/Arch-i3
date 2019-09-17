@@ -1,0 +1,6 @@
+####paket yöneticinden aşağıdaki paket yüklenir;####
+pikaur -S streamlink
+
+####ve ardından qutebrowser'a girip adres bölümüne aşağıdaki komutlar yazılıp ayarlanır;####
+:bind m spawn mpv {url}
+:bind ;m hint links spawn mpv {hint-url}

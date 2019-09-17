@@ -1,0 +1,11 @@
+1-"sudo pacman -S ncmpcpp mpd" komutu ile ncmpcpp ve mpd kurulur.
+
+2-"~.config" klasöründeki "mpd" klasörü "/home/dogukan/.config" içerisine yapıştırılır.
+
+3-Ardından "~.mpd" dizini "/home/dogukan" içerisine ".mpd" şeklinde yapıştırılır.
+
+4-Aynı şekilde "~ncmpcpp" dizini de "/home/dogukan" içerisine ".ncmpcpp" şeklinde yapıştırılır.
+
+5-Açılan terminale mpd yazılır ve aktif hale getirilir ardından ncmpcpp komutu ile terminal üzerinden müzik dinleyebiliriz.
+
+6- Son olarak her PC açılışında terminale mpd komutunu girmek istemiyorsak, "systemctl --user enable mpd.service" komutu girilir ve mpd her açılışta kullanıcı düzeyinde aktif hale getirilir.
