@@ -3,9 +3,9 @@
 git config --global user.name "ElephantMan1862"
 git config --global user.email "elsineiselase@gmail.com"
 
-Terminale komutları ile git hesabı yapılır.
+Terminal komutları ile git hesabı yapılandırılır.
 
-2-Proje konusu olacak dizine terminalden gidip (ben "/home/dogukan" dizinini proje olarak seçtim) "git init" komutunu giriyoruz ve ardından "ls -a" komutunu girip ".git" adında bir dosya oluşturulup oluşturulmadığını kontrol ediyoruz. Oluşturulduktan sonra "git status" komutu ile github'a yüklenecek seçili dosyaları görebiliriz.(Hangi dosyaların ismi çıkıyorsa onlar yüklenecek demektir)
+2-Proje konusu olacak dizine terminalden gidip (ben "/home/dogukan" dizinini proje olarak seçtim) "git init" komutunu giriyoruz ve ardından "ls -a" komutunu girip ".git" adında bir dosya oluşturulup oluşturulmadığını kontrol ediyoruz. Oluşturulduktan sonra "git status" komutu ile git'e yüklenecek seçili proje dosyalarını görebiliriz.(Hangi dosyaların ismi çıkıyorsa onlar yüklenecek demektir)
 
 3-Eğer yüklenmesini istemediğimiz dosyalar varsa, proje dizinimizde ("/home/dogukan" içerisinde) ".gitignore" adında bir metin belgesi oluşturuyoruz ve içerisine yüklemek istemediğimiz metin belgelerinin adını (örneğin ".viminfo" şeklinde) yazıyoruz. Eğer yüklemek istemediğimiz şeyler klasör şeklindeyse yine ".gitignore" içerisine klasör adını (örneğin "Musics/*") şeklinde yazıyoruz.
 
@@ -16,4 +16,34 @@ Terminale komutları ile git hesabı yapılır.
 !.config/rtorrent
 
 şeklinde düzenliyoruz. Bu düzenleme ile ".config" klasörü içerisindeki sadece rtorrent dosyasını/klasörünü yüklemiş olacağız.
- deneme
+
+5-Şimdi terar "git status" komutu ile hangi dosyaların git'e yükleneceğini kontrol edebiliriz.
+
+6-Ardından projeyi git repositorye eklemek için için proje dizinindeyken terminalden "git add ." komutunu veriyoruz. Bu komut ile dosyalar hemen git'e yüklenmez, "stating area" adı verilen bir geçiş bölgesine gönderilir. (bu komutta add eklemek demek ve nokta yani "." ise bulunduğumuz dizini belirtiyor)
+
+7-Şimdi dosyaları geçiş bölgesinden (yani "staging area" adı verilen bölgeden) git deposuna yüklemek için commit etmemiz gerekli, bunun için aşağıdaki komutu giriyoruz;
+
+git commit -m "ilk commit"
+
+Şu anda git tarafından projemizin kopyası oluşturuldu.
+(Burada tırnak içerisindeki kısma projemizin niteliğini anlatacak şekilde bir şeylere yazmalıyız. Örneğin, ilk commmit, ikinci versiyon, değiştirildi, güncellendi gibi)
+Ayrıca bu komut ile yaptığımız versiyonları görebilmek için "git log" komutunu girebiliriz.
+
+8-Proje dosyalarını GitHub'a yüklemek için, GitHub'dan üyelik açıp, repository oluşturuyoruz. Ardından bizi kendi proje sayfa linkimizinde olduğu bir sayfaya yönlendiriyor. Bu linki kopyalıyoruz ve proje dizinimize gidip "git remote add köken https://github.com/ElephantMan1862/Archi3.git" komutunu giriyoruz. (köken yerine istediğimiz bir şeyi yazabiliriz, bu ekleyeceğimiz GitHub bağlantısının takma adını belirler)
+
+Bağlantının çalışıp çalışmadığından emin olmak için "git remote" komutunu girip bağlantının eklenip eklenmediğini görebiliriz, eğer bu komutla birlikte altta "köken" yazısı beliriyorsa bağlantımız çalışıyor demektir.
+
+9-Şimdi projemizi yükleme komutuna geçelim. Terminale "git push -u köken master" komutunu giriyoruz ve ardından GitHub kullanıcı adımızı ve şifremizi giriyoruz, dosyalarımız yüklenmeye başlıyor. (buradaki "push" gönderme, "-u" parametresi ise bütün dosyaları gönderme, "köken" ise bağlantılarımızı kurduğumuz GitHub deposu, "master" ise GitHub projesinin ana dalıdır)
+
+Bu komut ile artık projemiz GitHub'a yüklendi.
+
+
+10-Eğer proje dosyalarımızda bir değişiklik yaptıysak ve bunu GitHub'da güncellemek istiyorsak;
+
+####GitHub'A YÜKLENMİŞ PROJE DOSYALARINDA DEĞİŞİKLİK YAPMAK İÇİN####
+
+1*-Dosya üzerinde değişiklik yapılır
+2*-Ardından proje dizinine gidilir ve "git status" komutu girilip yapılan değişiklik gözüküyor mu kontrol edilir.
+3*-Değişiklik gözlemlendiğin de yine proje dizinindeyken, "git add ." komutu girilir ve dosyalar staging area'e  (geçiş bölgesine) gönderilir.
+4*-Sonra dosyaları geçiş bölgesinden GitHub'a aktarmak için git commit -m "Documents/Text Dosyaları/Git Yapılandırma dosyası değiştirildi" komutuyla commit işlemini yapıyoruz. (Tırnak içindeki bölgeye değişiklik sebebini ya da neyin değiştirildiğini yazabiliriz)
+5*-Son olarak "git push -u köken master" komutuyla dosyalarımızı GitHub'a yüklüyoruz. 
