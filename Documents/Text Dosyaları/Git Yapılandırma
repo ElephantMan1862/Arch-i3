@@ -46,4 +46,4 @@ Bu komut ile artık projemiz GitHub'a yüklendi.
 2*-Ardından proje dizinine gidilir ve "git status" komutu girilip yapılan değişiklik gözüküyor mu kontrol edilir.
 3*-Değişiklik gözlemlendiğin de yine proje dizinindeyken, "git add ." komutu girilir ve dosyalar staging area'e  (geçiş bölgesine) gönderilir.
 4*-Sonra dosyaları geçiş bölgesinden GitHub'a aktarmak için git commit -m "Documents/Text Dosyaları/Git Yapılandırma dosyası değiştirildi" komutuyla commit işlemini yapıyoruz. (Tırnak içindeki bölgeye değişiklik sebebini ya da neyin değiştirildiğini yazabiliriz)
-5*-Son olarak "git push -u köken master" komutuyla dosyalarımızı GitHub'a yüklüyoruz. 
+5*-Son olarak "git push -u köken master" komutunu giriyoruz ve kullanıcı adımızı, şifremizi yazıp dosyalarımızı güncelleme işlemini tamamlıyoruz. 
