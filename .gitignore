@@ -10,6 +10,7 @@ Videos/*
 .purple/*
 .pki/*
 Pictures/*
+!Pictures/Elephant Man 2.jpg
 .ncmpcpp/*
 Musics/*
 .metadata.json
@@ -26,6 +27,8 @@ Downloads/*
 
 Documents/*
 !Documents/Text Dosyaları
+!Documents/Root Ayarları
+!Documents/Tor Yapılandırma
 
 .config/*
 !.config/rtorrent

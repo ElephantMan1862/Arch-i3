@@ -1,0 +1,20 @@
+1-"pikaur -S tor obfs4proxy" yazarak tor ve obfs4proxy paketi kurulur.
+
+2-Ardından "vim /etc/tor/torrc" komutu ile vim üzerinden "torrc" dosyasının en alt satırına şu satırlar eklenir;
+
+ClientTransportPlugin obfs4 exec /usr/bin/obfs4proxy
+
+UseBridges 1
+Bridge obfs4 188.166.61.220:9443 CD1288EA8991A469A03CEBF2C94CF6A794B1D284 cert=UK2FeHPr/eT9Sca3wMeZtXuOieOdVe5X61T4KL8KTj7LGPSO8F8npx1GudrBSguBDTN6aQ iat-mode=0
+Bridge obfs4 34.248.160.189:9443 3716AEB9801B2A331BE8B1A325AFAF80BA9A3C4D cert=bxi2QmlOfUJHRIEo4TtJZaznFEz1tUbC/LXBfrRej5RDq9hQmI9ELa+HCrdwJqdf/Y/4Ww iat-mode=0
+Bridge obfs4 45.76.31.93:9443 1F696E223A4CC260A7F8D89D424C56A5ED00ECB9 cert=bEzLs7298tPaLF39pXCIDjmBjsAFASbh3rg8q4tpr1XPLfnSq+vqJiDCBMb++ZRrYjdcFw iat-mode=0
+
+(Tor köprülerini edinmek için Gmail, Yahoo ya da Riseup email hesabımızdan "bridges@torproject.org" mail adresine "get transport obfs4" yazıp mail gönderiyoruz. Otuz saniye gibi kısa bir süre içerisinde bize köprüler mail şeklinde gönderilecek.)
+
+3-Ardından systemctl start tor.service komutu ile tor aktif hale getirilir ve gelen ekrana kullanıcı adı ve şifre yazılır.
+
+4-Eğer qutebrowser'dan tor'a girilecekse; qutebrowser'ı açıp ":set content.proxy socks://localhost:9050/" şeklinde browser'a komutumuzu giriyoruz
+
+Firefox'tan girilecekse; Proxy ayarlarına girip (Advanced>Network>Connection>Settings) Manual proxy configuration seçeneğini seçip "SOCKS Host" kısmını 127.0.0.1, Port'u 9050, Kutucuklardan "SOCKS v5" seçeneğini işaretliyoruz ve No Proxy for kısmına "localhost, 127.0.0.1" yazıyoruz. 
+
+5-Son olarak tor'a sağlıklı bir şekilde giriş yapabildiğimizi test etmek için https://check.torproject.org adresini ziyaret edebiliriz.
