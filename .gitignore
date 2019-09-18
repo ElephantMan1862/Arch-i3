@@ -1,34 +1,16 @@
-.xsession-errors.old
-.xsession-errors
-.Xauthority
-.w3m/*
-.viminfo
-.vim/*
-Videos/*
-.urxvt/*
-.QtWebEngineProcess/*
-.purple/*
-.pki/*
-Pictures/*
-!Pictures/Elephant Man 2.jpg
-.ncmpcpp/*
-Musics/*
-.metadata.json
-.local/*
-Katiplik/*
-.icons/*
-.gnupg/*
-.fehbg
-.esd_auth
-Downloads/*
-.cache/*
-.bash_logout
+####TEXT DOSYALARI####
 .bash_history
+.bash_logout
+.esd_auth
+.fehbg
+.metadata.json
+.viminfo
+.Xauthority
+.xsession-errors
+.xsession-errors.old
 
-Documents/*
-!Documents/Text Dosyaları
-!Documents/Root Ayarları
-!Documents/Tor Yapılandırma
+####KLASÖRLER####
+.cache/*
 
 .config/*
 !.config/rtorrent
@@ -40,3 +22,35 @@ Documents/*
 !.config/mpd
 !.config/i3
 !.config/gtk-3.0
+
+Documents/*
+!Documents/Text Dosyaları
+!Documents/Root Ayarları
+!Documents/Tor Yapılandırma
+
+Downloads/*
+!Downloads/.DownloadsGit
+
+.gnupg/*
+.icons/*
+.local/*
+
+Musics/*
+!Musics/.MusicsGit
+
+.ncmpcpp/*
+
+Pictures/*
+!Pictures/Elephant Man 2.jpg
+
+.pki/*
+.purple/*
+.QtWebEngineProcess/*
+.thumbnails/*
+.urxvt/*
+
+Videos/*
+!Videos/.VideosGit
+
+.vim/*
+.w3m/*
