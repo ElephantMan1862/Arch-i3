@@ -1,0 +1,12 @@
+1-"sudo vim /boot/syslinux/syslinux.cfg" komutu ile bootloader ayarları açılır;
+
+PROMPT 0
+TIMEOUT 0
+
+seçenekleri yukarıdaki gibi sıfır değerlerine ayarlanır ve biraz daha altlarda yer alan;
+
+UI menu.c32 seçeneği bulunur ve aşağıdaki gibi başına diez işareti getirilerek ayarlanır. (comment edilir)
+
+#UI menu.c32
+
+Bu ayardan sonra kayıt edip çıkılır ve  artık bootloaderimiz autoboot olacak şekilde ayarlanmıştır.
