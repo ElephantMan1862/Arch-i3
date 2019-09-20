@@ -1,1 +1,1 @@
-timedatectl set-timezone Europe/Istanbul
+"timedatectl set-timezone Europe/Istanbul" komutu ile sistem saatimizi Istanbul/Türkiye şeklinde ayarlıyoruz ve ardından  "timedatectl set-ntp true" komutu ile de sistem saatimizin dakika ve saniye bazında senkronize olmasını sağlıyoruz.
