@@ -1,3 +1,4 @@
+####SYSLINUX AUTOBOOT AYARLAM####
 1-"sudo vim /boot/syslinux/syslinux.cfg" komutu ile bootloader ayarları açılır;
 
 PROMPT 0
