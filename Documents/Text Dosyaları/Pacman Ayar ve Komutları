@@ -47,6 +47,7 @@ satırlarını bulup başlarındaki diez işaretlerini kaldırıyoruz ve ardınd
 "pactree package_name" - Paketin bağımlılıklarını listelemek
 "sudo pacman -Q > laptop.pacman" - Sistemde kurulu tüm paketleri sürüm numaraları ile listelemek
 "pacman -Qm" - AUR'dan kurulan tüm paketlerin listesi
+"pacman -Qo" - Belirtilen dizinin hangi paket ile kurulduğunu gösterir (Örneğin; Pacman -Qo /usr/share/i18n)
 
 ####PGP (KAMU ANAHTARI) EKLEME####
 "gpg --keyserver keys.gnupg.net --recv-keys ................" - noktalı kısımlara hata alınan key yazılır

@@ -4,6 +4,9 @@
 .esd_auth
 .fehbg
 .metadata.json
+.pulse-cookie
+.steampath
+.steampid
 .viminfo
 .Xauthority
 .xsession-errors
@@ -34,6 +37,7 @@ Downloads/*
 .gnupg/*
 .icons/*
 .local/*
+.lgp/*
 
 Musics/*
 !Musics/.MusicsGit
@@ -46,6 +50,7 @@ Pictures/*
 .pki/*
 .purple/*
 .QtWebEngineProcess/*
+.steam/*
 .thumbnails/*
 .urxvt/*
 
