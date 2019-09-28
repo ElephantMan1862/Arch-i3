@@ -18,7 +18,7 @@ URxvt.urlLauncher: qutebrowser
 
 ! Other settings
 URxvt.depth: 32
-URxvt.geometry: 90x30
+URxvt.geometry: 95x26
 URxvt.transparent: false
 URxvt.fading: 0
 URxvt.urgentOnBell: true
