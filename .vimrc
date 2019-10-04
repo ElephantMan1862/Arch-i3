@@ -17,7 +17,7 @@ runtime! archlinux.vim
 " do not load defaults if ~/.vimrc is missing
 "let skip_defaults_vim=1
 
-set mouse=n
+set mouse=a
 syntax on
 filetype plugin on
 filetype indent on

@@ -75,6 +75,7 @@ curl (büyük ihtimalle kurulu olarak gelir kurulu değilse kur)
 cmatrix
 neofetch
 ttf-dejavu
+ttf-font-awesome (i3blocks ikonları için yüklemelisin)
 arc-icon-theme
 arc-gtk-theme
 xcursor-openzone (eğer fazla tema yüklenirse "/usr/share/themes", "/usr/share/icons/" "~/.icons" "~/.themes" dizinlerine girerek istenmeyen temalar silinebilir)
@@ -82,6 +83,7 @@ cowsay (eğlenmek için kurulabilir)
 
 ####i3 PENCERE YÖNETİCİSİ####
 i3-gaps
+sysstat (i3blocks CPU göstergesi için gerekli)
 mpstat (i3blocks'un CPU göstergesi için gerekli)
 i3lock
 rofi (dmenu yerine)
