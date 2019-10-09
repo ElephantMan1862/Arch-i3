@@ -23,5 +23,5 @@ filetype plugin on
 filetype indent on
 set number
 set linebreak
-colo koehler
 set viminfo="None"
+colo koehler
