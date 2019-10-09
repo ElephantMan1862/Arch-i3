@@ -24,3 +24,4 @@ filetype indent on
 set number
 set linebreak
 colo koehler
+set viminfo="None"

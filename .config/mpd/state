@@ -1,8 +1,9 @@
-sw_volume: 100
+sw_volume: 80
 audio_device_state:1:mpd alsamixer-output
 audio_device_state:1:my_fifo
-state: stop
-current: 0
+state: pause
+current: 3
+time: 5.466000
 random: 0
 repeat: 0
 single: 0
@@ -12,4 +13,7 @@ mixrampdb: 0.000000
 mixrampdelay: -1.000000
 playlist_begin
 0:Hip-hop|Rap/Yung Felix - Loco ft. Poke & Dopebwoy.opus
+1:Rock/Rammstein - Deutschland.opus
+2:Pop/Boney M - Rasputin.ogg
+3:Marşlar/Soviet March 1979.opus
 playlist_end
