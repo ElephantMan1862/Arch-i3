@@ -21,7 +21,7 @@ set mouse=a
 syntax on
 filetype plugin on
 filetype indent on
-set relativenumber
+set number
 set linebreak
 set viminfo="None"
 colorscheme koehler
