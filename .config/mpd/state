@@ -1,11 +1,11 @@
-sw_volume: 98
+sw_volume: 96
 audio_device_state:1:mpd alsamixer-output
 audio_device_state:1:my_fifo
 state: pause
-current: 3
-time: 0.000000
+current: 4
+time: 123.075000
 random: 0
-repeat: 0
+repeat: 1
 single: 1
 consume: 0
 crossfade: 0
@@ -16,4 +16,5 @@ playlist_begin
 1:Rock/Rammstein - Deutschland.opus
 2:Pop/Boney M - Rasputin.ogg
 3:Marşlar/Soviet March 1979.opus
+4:Film Müzikleri/Will Smith-Friend Like Me.m4a
 playlist_end

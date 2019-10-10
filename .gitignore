@@ -58,5 +58,6 @@ Videos/*
 !Videos/.VideosGit
 
 .vim/*
+!.vim/vimrc
 .w3m/*
 .klei/*
