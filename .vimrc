@@ -24,4 +24,4 @@ filetype indent on
 set number
 set linebreak
 set viminfo="None"
-colo koehler
+colorscheme koehler
