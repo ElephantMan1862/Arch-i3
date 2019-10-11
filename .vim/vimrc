@@ -24,4 +24,8 @@ filetype indent on
 set number
 set linebreak
 set viminfo="None"
-colorscheme koehler
+colorscheme molokai
+let g:molokai_original = 1
+hi Normal ctermbg=none
+hi NonText ctermbg=none
+hi LineNr ctermbg=none
