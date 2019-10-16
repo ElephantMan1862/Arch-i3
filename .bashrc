@@ -1,3 +1,4 @@
+#
 # /etc/bash.bashrc
 #
 
